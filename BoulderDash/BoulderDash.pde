@@ -9,8 +9,8 @@ PImage imageJoueur;
 int i = 0;
 int j = 0;
 
-int x = 0;
-int y = 0;
+//int x = 0;
+//int y = 0;
 
 //int largeurColonne = width/colonnes;
 //int hauteurRangee = height/rangees;
@@ -23,10 +23,10 @@ void setup() {
 
 void keyPressed() {
     
-  if (keyCode == RIGHT){x = x + 10;}
+  /*if (keyCode == RIGHT){x = x + 10;}
   if (keyCode == LEFT){x = x - 10; }
   if (keyCode == UP){y = y - 10;}
-  if (keyCode == DOWN){y = y + 10;}
+  if (keyCode == DOWN){y = y + 10;}*/
 }
 
 void draw() {
