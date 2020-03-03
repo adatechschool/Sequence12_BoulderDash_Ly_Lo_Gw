@@ -1,19 +1,19 @@
-int colonnes = 5;
-int rangees = 5;
+int colonnes = 2;
+int rangees = 2;
 
+//int cellSize = 80;
 int[][] grille;
+
 PImage imageJoueur; 
 
 int i = 0;
 int j = 0;
 
-int largeurColonne = width/colonnes;
-int hauteurRangee = height/rangees;
+int x = 0;
+int y = 0;
 
-int x = i * largeurColonne;
-int y = j * hauteurRangee;
-
-
+//int largeurColonne = width/colonnes;
+//int hauteurRangee = height/rangees;
 
 void setup() {
   size(400, 400);
@@ -29,21 +29,15 @@ void keyPressed() {
   if (keyCode == DOWN){y = y + 10;}
 }
 
-
-
-
 void draw() {
-  background(1);
+  
+  background(255);
 
- 
-  for (i = 0; i < colonnes; i++) {
+   for (i = 0; i < colonnes; i++) {
     for(j = 0; j < rangees; j++) {
-       
-       //rect(x + 1, y + 1, largeurColonne - 2, hauteurRangee - 2);
-       image(imageJoueur, x , y, 60, 60);
-       
-      
-  }
-        
-}
+      rect(i + 1, j + 1, largeurColonne - 2, hauteurRangee - 2);
+      image(imageJoueur, x , y, 60, 60);
+  
+  }     
+ }
 }
